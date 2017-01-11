@@ -1,17 +1,27 @@
 fileFormatVersion: 2
-guid: 6a8788b0f63455443b3b9a72c5bafa28
+guid: 925ee8d202fbd47c78040e9f949b331b
 TrueTypeFontImporter:
-  serializedVersion: 2
+  serializedVersion: 4
   fontSize: 16
   forceTextureCase: -2
-  characterSpacing: 1
-  characterPadding: 0
+  characterSpacing: 0
+  characterPadding: 1
   includeFontData: 1
-  use2xBehaviour: 0
-  fontNames: []
-  fallbackFontReferences: []
+  fontName: Averia Sans Libre
+  fontNames:
+  - Averia Sans Libre
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 6a8788b0f63455443b3b9a72c5bafa28, type: 3}
+  - {fileID: 12800000, guid: 60d53c87db6424fb196bb1acfa79ec0f, type: 3}
+  - {fileID: 12800000, guid: c78fee69cf8c67f4d9a860e61f80ed0d, type: 3}
+  - {fileID: 12800000, guid: cbf6be1ab713f2a44b4f9fb7e8ed1b95, type: 3}
+  - {fileID: 12800000, guid: 7e32502acf79b4f43ac7dd6b964821b5, type: 3}
+  - {fileID: 12800000, guid: 89cd99eed2df945f2aa8519eb4278f63, type: 3}
+  - {fileID: 12800000, guid: 75d40d7f84a9e4648ae6d25f95d5abb6, type: 3}
+  - {fileID: 12800000, guid: 1f4aceaf5af6c534ba8cc879eb7eb338, type: 3}
   customCharacters: 
   fontRenderingMode: 0
+  ascentCalculationMode: 1
   userData: 
   assetBundleName: 
   assetBundleVariant: 

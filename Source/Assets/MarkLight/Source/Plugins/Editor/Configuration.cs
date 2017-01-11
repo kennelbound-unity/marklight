@@ -31,9 +31,9 @@ namespace MarkLight.Editor
         {
             ViewPaths = new List<string>();
             ViewPaths.Add("Assets/Views/");
-            ViewPaths.Add("Assets/MarkLight/Views/");
-            ViewPaths.Add("Assets/MarkLight/Examples/Views/");
-            SchemaFile = "Assets/MarkLight/Views/Schemas/MarkLight.xsd";
+            ViewPaths.Add("Assets/Plugins/packman-pkgs/kennelbound-unity.marklight/Views/");
+            ViewPaths.Add("Assets/Plugins/packman-pkgs/kennelbound-unity.marklight/Examples/Views/");
+            SchemaFile = "Assets/MarkLightGeneratedSchema.xsd";
         }
 
         #endregion
@@ -72,7 +72,7 @@ namespace MarkLight.Editor
                     return _instance.GetValidated();
                 
                 // check default directory
-                Configuration configuration = AssetDatabase.LoadAssetAtPath("Assets/MarkLight/Configuration/Configuration.asset", typeof(Configuration)) as Configuration;
+                Configuration configuration = AssetDatabase.LoadAssetAtPath("Assets/Plugins/packman-pkgs/kennelbound-unity.marklight/Configuration/Configuration.asset", typeof(Configuration)) as Configuration;
                 if (configuration != null)
                 {
                     _instance = configuration;
@@ -93,9 +93,9 @@ namespace MarkLight.Editor
                 }
 
                 // no configuration found. create new at default location                 
-                System.IO.Directory.CreateDirectory("Assets/MarkLight/Configuration/");
+                System.IO.Directory.CreateDirectory("Assets/Plugins/packman-pkgs/kennelbound-unity.marklight/Configuration/");
                 configuration = ScriptableObject.CreateInstance<Configuration>();
-                AssetDatabase.CreateAsset(configuration, "Assets/MarkLight/Configuration/Configuration.asset");
+                AssetDatabase.CreateAsset(configuration, "Assets/Plugins/packman-pkgs/kennelbound-unity.marklight/Configuration/Configuration.asset");
                 AssetDatabase.Refresh();
                     
                 _instance = configuration;              
